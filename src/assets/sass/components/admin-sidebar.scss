@@ -1,0 +1,48 @@
+@import "../variables";
+.admin-sidebar {
+  width: 250px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: $color-primary;
+  height: 100vh;
+  overflow: auto hidden;
+  padding: 40px 0;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    &:hover {
+      background-color: #cecece;
+      a {
+        color: $color-primary;
+        font-weight: bold;
+      }
+    }
+    a {
+      padding: 12px 24px;
+      text-decoration: none;
+      color: #333;
+      display: block;
+      color: #fff;
+    }
+  }
+  .btn-danger {
+    margin-top: 24px;
+    margin-left: 24px;
+    min-width: 150px;
+  }
+}
+
+.admin-main {
+  padding: 24px;
+  margin-left: 250px;
+  width: calc(100% - 250px);
+}
+
+.table-responsive {
+  height: 450px;
+  overflow: auto;
+}

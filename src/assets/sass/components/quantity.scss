@@ -1,0 +1,37 @@
+.quantity {
+  display: flex;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  width: fit-content;
+  overflow: hidden;
+  span {
+    display: block;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+    &:hover {
+      background-color: #333;
+      color: #fff;
+    }
+  }
+  &-sub {
+    width: 40px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  &-num {
+    width: 40px;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+    font-size: 1.125rem;
+    pointer-events: none;
+  }
+  &-add {
+    width: 40px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}

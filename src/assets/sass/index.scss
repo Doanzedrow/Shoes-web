@@ -1,0 +1,93 @@
+@import "variables.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.slick-list {
+  margin: 0 -0.75rem;
+}
+.slick-slide > div {
+  padding: 0 0.75rem;
+}
+
+.slick-dots {
+  bottom: -40px !important;
+}
+
+.slick-dots li button:before {
+  font-size: 16px !important;
+}
+.header-spacing {
+  margin-bottom: 7rem;
+}
+.btn-user {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: #dd2a2a;
+  border-radius: 50%;
+}
+
+.modal-x {
+  position: fixed;
+  z-index: 999;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    h3 {
+      font-size: 18px;
+      margin: 0;
+    }
+    button {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+  &-body {
+    width: 30rem;
+    background-color: #fff;
+    margin-inline: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 12px 24px 24px;
+    border-radius: 10px;
+  }
+}
+@import "mixins.scss";
+@import "header.scss";
+@import "banner.scss";
+@import "features.scss";
+// @import 'productnew.scss';
+// @import 'producthot.scss';
+@import "backTop.scss";
+@import "aside.scss";
+@import "store.scss";
+@import "product.scss";
+@import "productDetail.scss";
+@import "productRelated.scss";
+@import "viewCart.scss";
+@import "checkOut.scss";
+@import "footer.scss";
+@import "login.scss";
+@import "auth.scss";
+@import "btn.scss";
+@import "image-thumbnail.scss";

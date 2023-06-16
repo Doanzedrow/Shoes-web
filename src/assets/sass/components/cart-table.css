@@ -1,0 +1,19 @@
+.cart-table {
+  border-bottom: 1px solid #ddd;
+}
+.cart-table-image {
+  height: 120px;
+}
+.cart-table-image img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.cart-table-bottom {
+  margin-left: auto;
+  text-align: right;
+}
+.cart-table-row th,
+.cart-table td:not(.cart-table-image) {
+  padding-block: 20px;
+}

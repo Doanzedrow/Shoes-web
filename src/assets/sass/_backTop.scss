@@ -1,0 +1,36 @@
+.cd-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  // background: url(../img/cd-top-arrow.svg) no-repeat center 50%;
+  background-color: hsla(5, 76%, 62%, 0.8);
+  z-index: 100;
+  border-radius: 50%;
+}
+
+
+.cd-top {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s, visibility .3s, background-color .3s;
+}
+
+.cd-top--is-visible {
+  // back-to-top button visible
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  // reduce button opacity if user keeps scrolling
+  opacity: .5;
+}
+
+.cd-top:hover {
+  background-color: hsla(5, 76%, 62%, 1);
+  opacity: 1;
+}

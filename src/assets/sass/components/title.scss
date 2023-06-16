@@ -1,0 +1,19 @@
+@import "../variables";
+.title{
+  padding: 6px 24px;
+  margin-bottom: 24px;
+  position: relative;
+  h3{
+    margin: 0;
+    text-transform: uppercase;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    background-color: $color-primary;
+  }
+}

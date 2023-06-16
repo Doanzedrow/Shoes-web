@@ -1,0 +1,112 @@
+.product {
+  position: relative;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0px 2px 4px rgba($color: #000000, $alpha: 0.1);
+  padding: 2px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .product-img {
+    padding-top: 75%;
+    width: 100%;
+    position: relative;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .product-label {
+      position: absolute;
+      top: 12px;
+      left: 24px;
+      box-sizing: border-box;
+
+      .sale,
+      .new {
+        padding: 2px 12px;
+        border-radius: 6px;
+        font-size: 0.875rem;
+      }
+
+      .sale {
+        border: 1px solid #bc2222;
+        color: #bc2222;
+      }
+
+      .new {
+        margin-left: 8px;
+        background-color: #008634;
+        color: #fff;
+      }
+    }
+  }
+
+  .product-body {
+    position: relative;
+    z-index: 10;
+    margin: 0 5px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    .product-name {
+      font-size: 1.125rem;
+    }
+
+    .product-price {
+      display: block;
+      font-size: 1rem;
+      color: #333;
+
+      .product-old-price {
+        color: #5b5b5b;
+        font-size: 0.874rem;
+      }
+    }
+
+    .product-rating {
+      i {
+        color: #fffb03;
+      }
+    }
+  }
+
+  &-sizes {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    padding: 0;
+    li {
+      display: block;
+      padding: 4px;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: all 0.4s;
+      &:hover,
+      &.active {
+        background-color: $color-primary;
+        color: #fff;
+      }
+    }
+  }
+  &:hover {
+    border-color: $color-primary;
+  }
+  .btn-add-to-cart {
+    margin-top: auto;
+  }
+}

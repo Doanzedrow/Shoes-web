@@ -1,0 +1,23 @@
+.btn {
+  &-add-to-cart {
+    background: #eee;
+    color: #333;
+    font-weight: 500;
+    border-color: transparent;
+    font-size: 0.875rem;
+    &:hover {
+      background-color: $color-primary;
+      color: #fff;
+    }
+  }
+  &-product-to-cart {
+    height: 50px;
+    border-radius: 9999px;
+    background-color: $color-primary !important;
+    color: #fff !important;
+    padding-inline: 24px;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

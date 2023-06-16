@@ -1,0 +1,38 @@
+.quantity {
+  display: flex;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  width: -moz-fit-content;
+  width: fit-content;
+  overflow: hidden;
+}
+.quantity span {
+  display: block;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+}
+.quantity span:hover {
+  background-color: #333;
+  color: #fff;
+}
+.quantity-sub {
+  width: 40px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.quantity-num {
+  width: 40px;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+  font-size: 1.125rem;
+  pointer-events: none;
+}
+.quantity-add {
+  width: 40px;
+  cursor: pointer;
+  font-weight: bold;
+}

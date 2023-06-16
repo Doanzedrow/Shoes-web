@@ -1,0 +1,29 @@
+$hover-color: red;
+.tab-nav {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  margin-inline: auto;
+  &-item {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: $hover-color;
+      transition: all 0.4s;
+    }
+    &:hover,
+    &.active {
+      color: $hover-color;
+      &::before {
+        width: 100% !important;
+      }
+    }
+  }
+}

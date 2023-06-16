@@ -1,0 +1,28 @@
+.tab-nav {
+  display: flex;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: auto;
+}
+.tab-nav-item {
+  position: relative;
+  cursor: pointer;
+  display: block;
+}
+.tab-nav-item::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  transition: all 0.4s;
+}
+.tab-nav-item:hover, .tab-nav-item.active {
+  color: red;
+}
+.tab-nav-item:hover::before, .tab-nav-item.active::before {
+  width: 100% !important;
+}
